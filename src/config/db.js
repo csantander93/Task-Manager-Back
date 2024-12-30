@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/taskmanager"; 
+    const mongoURI = process.env.MONGO_URL || "mongodb://mongo:WIwpTcLqsHtSznkKmTKPHNXOwhzIPCbH@mongodb.railway.internal:27017"; 
     await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
