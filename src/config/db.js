@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     // Usa la URI desde las variables de entorno
-    const mongoURI = process.env.MONGO_URL || "mongodb://localhost:27017/taskmanager";
+    const mongoURI = process.env.MONGO_URL;
     console.log("MONGO_URL:", mongoURI);
 
     await mongoose.connect(mongoURI); 
